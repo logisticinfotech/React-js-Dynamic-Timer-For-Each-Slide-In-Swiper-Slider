@@ -1,0 +1,115 @@
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* Rectangle 8: */
+    background-image: linear-gradient(-132deg, #4BB8FA 0%, #736EFE 100%);
+    height: 100%;
+    flex-direction: column;
+}
+
+.swiper-wrapper {
+    height: 100vh;
+}
+
+.slider-timer {}
+
+h2 {
+    font-size: 25px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 55px;
+    color: #fff;
+}
+
+.d-none{
+    display: none;
+}
+
+.txt-small{
+    font-size: 35px;
+}
+
+button {
+    padding: 15px;
+    min-width: 120px;
+    font-size: 15px;
+    background-color: #fff;
+    border: none;
+    color: #736EFE;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.slider-timer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    span {
+        min-width: 80px;
+        padding: 10px;
+        background-color: rgba(115, 110, 254, 0.5);
+        display: inline-block;
+        margin: 0 15px;
+    }
+}
+
+button:hover,
+button:focus,
+button:active {
+    opacity: 0.8;
+}
+
+.slider-check {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    border:2px solid transparent;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    input {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;    
+        &:checked+label {
+            background-image: url(../Slider/check.svg);
+        }
+    }
+    label {
+        color: #333333;
+        padding-left: 40px;
+        background: url(../Slider/uncheck.svg) no-repeat;
+        background-size: 20px;
+        background-position: left center;
+    }
+}
